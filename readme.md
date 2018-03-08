@@ -36,6 +36,6 @@ The usage of libraries or frameworks is allowed, if this make your test easier o
 
 ## The Solution:
 
-- [Index.html](index.html) - The interface that users uses the interface.
+- [Index.html](https://vinnycl.github.io/cash-machine/index.html) - The interface that users uses the interface.
 - [cashMachine.js](assets/js/cashMachine.js) - Javascript that contains events and functions to calculate it.
-- [SpecRunner.html](tests/SpecRunner.html) - To test project functions using [Jasmine.Js](https://jasmine.github.io/) framework.
+- [SpecRunner.html](https://vinnycl.github.io/cash-machine/tests/SpecRunner.html) - To test project functions using [Jasmine.Js](https://jasmine.github.io/) framework.
