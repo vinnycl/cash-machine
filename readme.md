@@ -1,6 +1,6 @@
-##Cash Machine
+# Cash Machine
 
-### The Problem
+## The Problem
 
 Develop a solution that simulate the delivery of notes when a client does a withdraw in a cash machine.
 The basic requirements are the follow:
@@ -10,7 +10,7 @@ The basic requirements are the follow:
 - Amount of notes is infinite;
 - Available notes $ 100,00; $ 50,00; $ 20,00 e $ 10,00
 
-#### Example:
+### Example:
 
 - Entry: 30.00
   Result: [20.00, 10.00]
@@ -23,18 +23,18 @@ The basic requirements are the follow:
 - Entry: NULL
   Result: [Empty Set]
 
-### The Deliverables:
+## The Deliverables:
 
 Make sure your code is well written, focus in good practices and prepare a small (10 minutes) talk/explanation about the decisions in your code/architecture. 
 The usage of libraries or frameworks is allowed, if this make your test easier or better feel free to make use of those.
 
-#### With the test please delivery:
+### With the test please delivery:
 
 - API endpoint(s) to test the code
 - Tests
 - any other material you think could be relevant to enrich your test and why
 
-### The Solution:
+## The Solution:
 
 - [Index.html](index.html) - The interface that users uses the interface.
 - [cashMachine.js](assets/js/cashMachine.js) - Javascript that contains events and functions to calculate it.
