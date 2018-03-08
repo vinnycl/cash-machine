@@ -2,7 +2,7 @@
 document.getElementById("cashButton").addEventListener("click", function(){
 	// get input value
 	getInputValue = document.getElementById("cashInput").value;
-	withdraw(getInputValue);
+	document.getElementById("cashResult").innerHTML = withdraw(getInputValue);
 });
 
 
@@ -10,19 +10,19 @@ document.getElementById("cashButton").addEventListener("click", function(){
 function withdraw(amount) {
 	// check if it is null empty or null
 	if (amount == "" || amount == null || amount == 0) {
-		document.getElementById("cashResult").innerHTML = "Empty Set";
+		return  "Empty Set";
 	}
 	// if change the input
 	else if (isNaN(amount)) {
-		document.getElementById("cashResult").innerHTML = "Only numbers please";
+		return  "Only numbers please";
 	}
 	// can't be less than zero
 	else if (amount < 0) {
-		document.getElementById("cashResult").innerHTML = "InvalidArgumentException";
+		return  "InvalidArgumentException";
 	}
 	// must be divided for 10
 	else if (amount % 10) {
-		document.getElementById("cashResult").innerHTML = "NoteUnavailableException";
+		return  "NoteUnavailableException";
 	}
 	else {
 		//possible notes
@@ -45,6 +45,6 @@ function withdraw(amount) {
 			noteNow++;
 		}
 		//write note result
-		document.getElementById("cashResult").innerHTML = returnNotes;
+		return returnNotes;
 	}
 }
