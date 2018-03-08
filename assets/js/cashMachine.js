@@ -9,7 +9,7 @@ document.getElementById("cashButton").addEventListener("click", function(){
 // main count function
 function withdraw(amount) {
 	// check if it is null empty or null
-	if (amount == "" || amount == null || amount == 0) {
+	if (amount === "" || amount === null || amount === "0" || amount === 0) {
 		return  "Empty Set";
 	}
 	// if change the input
@@ -26,10 +26,10 @@ function withdraw(amount) {
 	}
 	else {
 		//possible notes
-		notesAvailable = [100, 50, 20, 10];
-		currentTotal = 0;
-		noteNow = 0;
-		returnNotes = [];
+		const notesAvailable = [100, 50, 20, 10];
+		let currentTotal = 0;
+		let noteNow = 0;
+		let returnNotes = [];
 
 		//loop until the value is not fulfilled
 		while (currentTotal < amount) {
