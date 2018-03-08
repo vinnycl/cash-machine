@@ -1,0 +1,11 @@
+{
+  "name": "Cash Machine",
+  "version": "1.0.0",
+  "description": "Develop a solution that simulate the delivery of notes when a client does a withdraw in a cash machine.",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vinnycl/cash-machine.git"
+  },
+  "author": "Vinicius Loureiro"
+}

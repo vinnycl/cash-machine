@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body {
+	margin: 0; 
+	padding:  0;
+	font-size: 100%;
+}
+
+body, input, button {
+	font-family: 'Roboto', sans-serif;
+	outline: 0;
+}
+input::-webkit-inner-spin-button,  input::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+
+main {
+	text-align: center;
+}
+
+main h1 {
+	font-size: 2rem;
+}
+
+main #cashButton {
+	background: #2c539e;
+	border: 0 none;
+	color: #fff;
+	padding: .4em;
+}
+
+main #cashInput {
+	border: .1em solid #2f2f2f;
+	color: #2f2f2f;
+	padding: .3em;
+}
+
+main .shareSizes {
+	border-radius: .2em;
+	font-size: 1rem;
+}
+
+main #cashResult {
+	color: #fff;
+	background: #000;
+	font-size: 1.5rem;
+	padding: .5em;
+}
+
+@media (min-width: 500px) {
+	main h1 {
+		font-size: 3rem;
+	}
+}
