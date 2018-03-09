@@ -45,6 +45,7 @@ main #cashResult {
 	background: #000;
 	font-size: 1.5rem;
 	padding: .5em;
+	word-break: break-all;
 }
 
 @media (min-width: 500px) {
