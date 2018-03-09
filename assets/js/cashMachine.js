@@ -8,7 +8,7 @@ document.getElementById("cashButton").addEventListener("click", function(){
 
 // main count function
 function withdraw(amount) {
-	// check if it is null empty or null
+	// check if it is null, empty or 0
 	if (amount === "" || amount === null || amount === "0" || amount === 0) {
 		return  "Empty Set";
 	}
