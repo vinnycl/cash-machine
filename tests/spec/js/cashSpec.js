@@ -18,7 +18,7 @@ it("Error: Can't be negative.", function() {
 	expect(withdraw(-130)).toEqual("InvalidArgumentException");
 });
 
-it("Error: Not valid notes.", function() {
+it("Error: Not valid notes [<10].", function() {
 	expect(withdraw(125)).toEqual("NoteUnavailableException");
 });
 
@@ -26,10 +26,10 @@ it("Error: User try to type a not valid character.", function() {
 	expect(withdraw("a")).toEqual("Only numbers please");
 });
 
-it("Expect to: Withdraw 30 notes [20,10].", function() {
+it("Expect to: Withdraw 30 [20,10].", function() {
 	expect(withdraw(30)).toEqual([20,10]);
 });
 
-it("Expect to: Withdraw notes [50,20,10].", function() {
+it("Expect to: Withdraw 80 [50,20,10].", function() {
 	expect(withdraw(80)).toEqual([50,20,10]);
 });
